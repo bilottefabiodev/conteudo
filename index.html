@@ -13,7 +13,6 @@
     document.addEventListener('click', function(event) {
       var link = event.target.closest('a[href*="chat.whatsapp.com"]');
       if (link) {
-        fbq('track', 'Lead');
         event.preventDefault();
         if (window.openRegistrationModal) {
           window.openRegistrationModal(link.href);
